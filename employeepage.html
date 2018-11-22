@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oims</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md" style="height:100px;background-color:#cccccc;">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-size:40px;">OIMS</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1"><button class="btn btn-primary" type="submit" style="background-color:rgb(0,0,0);margin-left:auto;">Logout</button></div>
+        </div>
+    </nav>
+    <div style="width:1000px;height:800px;margin-top:50px;margin-right:auto;margin-left:auto;background-color:rgba(204,204,204,0.1);padding:10px;">
+        <ul class="nav nav-tabs" style="background-color:#cccccc;">
+            <li class="nav-item"><a class="nav-link active" href="#">Inventory</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Daftar Request</a></li>
+        </ul><input type="search" placeholder="Search" style="margin-left:805px;margin-top:10px;width:175px;">
+        <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:980px;margin-right:auto;margin-left:auto;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width:50px;">ID</th>
+                        <th style="width:522px;">Nama</th>
+                        <th style="width:100px;">Harga</th>
+                        <th style="width:100px;">Jumlah</th>
+                        <th style="width:300px;margin:0;">Opsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Keyboard</td>
+                        <td>100.000</td>
+                        <td>2</td>
+                        <td><a href="#"><span style="text-decoration: underline;">Detail</span></a><input type="text" value="0" style="width:30px;margin-left:50px;"><button class="btn btn-primary" type="button" style="margin-left:10px;background-color:rgb(0,0,0);">+</button>
+                            <button
+                                class="btn btn-primary" type="button" style="background-color:rgb(0,0,0);margin-left:10px;width:36.9531px;">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mouse</td>
+                        <td>50.000</td>
+                        <td>3</td>
+                        <td><a href="#"><span style="text-decoration: underline;">Detail</span></a><input type="text" value="0" style="width:30px;margin-left:50px;"><button class="btn btn-primary" type="button" style="margin-left:10px;background-color:rgb(0,0,0);">+</button>
+                            <button
+                                class="btn btn-primary" type="button" style="background-color:rgb(0,0,0);margin-left:10px;width:36.9531px;">-</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-group" role="group" style="margin-left:805px;margin-top:10px;"><button class="btn btn-primary" type="submit" style="margin-right:10px;background-color:rgb(0,0,0);">Request</button><button class="btn btn-primary" type="button" style="width:82.5313px;background-color:rgb(0,0,0);">Reset</button></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
