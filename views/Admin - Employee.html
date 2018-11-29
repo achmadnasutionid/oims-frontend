@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Employee</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md" style="height:100px;background-color:#cccccc;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size:40px;">OIMS</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1" style="margin-right:100px;">
+            <h4>Admin</h4>
+            <a href="Login.html"><button class="btn btn-primary" type="submit" style="background-color:rgb(0,0,0);margin-left:30px;">Logout</button></a>
+        </div>
+    </nav>
+    
+    <div style="width:1000px;height:800px;margin-top:50px;margin-right:auto;margin-left:auto;background-color:rgba(204,204,204,0.1);padding:10px;">
+        <ul class="nav nav-tabs" style="background-color:#cccccc;">
+            <li class="nav-item"><a class="nav-link" href="Admin - Inventory.html">Inventory</a></li>
+            <li class="nav-item"><a class="nav-link" href="Admin - Supervisor.html">Supervisor</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Admin - Employee.html">Employee</a></li>
+            <li class="nav-item"><a class="nav-link" href="Admin - Daftar Request.html">Daftar Request</a></li>
+        </ul>
+        <input type="search" placeholder=" Search" style="margin-left:800px;margin-top:10px;width:175px;height:30px;">
+        <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:980px;margin-right:auto;margin-left:auto;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width:50px;text-align:center;">No</th>
+                        <th style="width:50px;text-align:center;">ID</th>
+                        <th style="width:500px;text-align:center;">Nama</th>
+                        <th style="width:100px;text-align:center;">Hp/Telp</th>
+                        <th style="width:100px;text-align:center;">Email</th>
+                        <th style="width:300px;text-align:center;">Opsi</th>
+                    </tr>
+                </thead>
+                <tbody style="text-align:center;">
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td style="text-align:left;">Napitupulu</td>
+                        <td>081345674523</td>
+                        <td>napitupulu@email.com</td>
+                        <td>
+                            <a href="#"><span style="text-decoration: underline;">Detail</span></a>
+                            <a href="#"><span style="text-decoration: underline;margin-left: 25px;">Edit</span></a>
+                        </td>
+                    </tr>
+                    <tr style="height:50px;">
+                        <td>2</td>
+                        <td>2</td>
+                        <td style="text-align:left;">Nasution</td>
+                        <td>081368472341</td>
+                        <td>nasution@email.com</td>
+                        <td>
+                            <a href="#"><span style="text-decoration: underline;">Detail</span></a>
+                            <a href="#"><span style="text-decoration: underline;margin-left: 25px;">Edit</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn-group" role="group" style="margin-left:900px;margin-top:10px;">
+            <button class="btn btn-primary" type="submit" style="background-color:rgb(0,0,0);">Add</button>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
