@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee - Daftar Request</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/oims.css">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Admin - Daftar Permintaan</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/oims.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -18,45 +18,30 @@
         </div>
     </nav>
     <div class="nav nav-tabs" style="position:sticky;top:0px;width:100%;background-color:#5D5C61;">
-        <a href="employee-inventory.html"><button class="button-link" type="submit">Inventory</button></a>
-        <a href="employee-request.html"><button class="button-active" type="submit">Daftar Request</button></a>
-        <a href="login.html"><button class="button-logout" type="submit" style="position: absolute; right: 0;">Logout</button></a>
+        <a href="admin-inventory.html"><button class="button-link" type="submit">Inventaris</button></a>
+        <a href="admin-supervisor.html"><button class="button-link" type="submit">Supervisor</button></a>
+        <a href="admin-employee.html"><button class="button-link" type="submit">Pegawai</button></a>
+        <a href="admin-request.html"><button class="button-active" type="submit">Daftar Permintaan</button></a>
+        <a href="../login.html"><button class="button-logout" type="submit">Logout</button></a>
     </div>
     <div style="width:1000px;height:800px;margin-right:auto;margin-left:auto;padding:10px;">
-        <input type="search" placeholder=" Search" style="margin-left:800px;margin-top:10px;width:175px;height:30px;">
-        <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:980px;margin-right:auto;margin-left:auto;">
+        <input id="searchReq" type="search" class="search" placeholder="Cari"/>
+        <div class="table-responsive" style="margin-top:10px;width:980px;margin-right:auto;margin-left:auto;">
             <table class="table">
                 <thead>
                     <tr>
-                        <th style="width:50px;text-align:center;">No</th>
-                        <th style="width:50px;text-align:center;">ID</th>
+                        <th style="width:100px;text-align:center;">No</th>
                         <th style="width:500px;text-align:center;">Deskripsi</th>
-                        <th style="width:100px;text-align:center;">Supervisor</th>
                         <th style="width:100px;text-align:center;">Status</th>
                         <th style="width:300px;text-align:center;">Opsi</th>
                     </tr>
                 </thead>
-                <tbody style="text-align:center;">
+                <tbody id="table-content" style="text-align:center;">
                     <tr>
                         <td>1</td>
-                        <td>1</td>
                         <td style="text-align:left;">Mouse 1, Keyboard 1</td>
-                        <td>Achmad</td>
                         <td>PENDING</td>
-                        <td>
-                            <button id="detailreq" type="submit" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;color:#007bff"><span style="text-decoration: underline;">Detail</span></button>
-                            <a href="#"><span style="text-decoration: underline;margin-left: 25px;">Cancel</span></a>
-                        </td>
-                    </tr>
-                    <tr style="height:50px;">
-                        <td>2</td>
-                        <td>2</td>
-                        <td style="text-align:left;">Keyboard 2</td>
-                        <td>Samuel</td>
-                        <td>APPROVED</td>
-                        <td>
-                            <button id="detailreq" type="submit" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;color:#007bff"><span style="text-decoration: underline;">Detail</span></button>
-                        </td>
+                        <td><button type="submit" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;color:#007bff"><span style="text-decoration: underline;">Detail</span></button></td>
                     </tr>
                 </tbody>
             </table>
@@ -100,6 +85,9 @@
                 </table>
             </div>
             <h4 style="margin-left:700px;">Total harga: 150.000</h4>
+            <div style="margin-top:25px;">
+                <a href="Admin - Daftar Request.html"><button class="btn btn-primary" id="done" type="submit" style="margin-left:800px;width:100px;background-color:#000000;">Hand over</button></a>
+            </div>
         </div>
     </div>
 </body>

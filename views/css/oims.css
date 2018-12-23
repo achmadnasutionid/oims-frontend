@@ -4,6 +4,10 @@ tr:nth-child(even) {
 th{
     background-color: #938E94;
 }
+table{
+    text-align:center;
+}
+
 .button-link {
     background-color: #5D5C61;
     color: #ffffff;
@@ -13,7 +17,7 @@ th{
     padding: 8px 16px;
     font-size: 20px;
     text-align:center;
-    width: 180px;
+    width: 200px;
 }
 .button-link:hover {
     background-color: #777777;
@@ -27,7 +31,7 @@ th{
     padding: 8px 16px;
     font-size: 20px;
     text-align:center;
-    width: 180px;
+    width: 200px;
 }
 .button-active:hover {
     background-color: #777777;
@@ -42,6 +46,63 @@ th{
     font-size: 20px;
     text-align:center;
     width: 100px;
+    position: absolute; right: 0;
+}
+.search{display:block;margin-left:780px;
+    margin-top:10px;
+    width:200px;
+    height:40px;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    line-height:1.5;
+    color:#495057;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    border-radius:.25rem;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.search::-ms-expand{
+    background-color:transparent;
+    border:0
+}
+
+.search:focus{
+    color:#495057;
+    background-color:#fff;
+    border-color:#80bdff;
+    outline:0;
+    box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+
+.search::-webkit-input-placeholder{
+    color:#6c757d;opacity:1
+}
+
+.search::-moz-placeholder{
+    color:#6c757d;opacity:1
+}
+
+.search:-ms-input-placeholder{
+    color:#6c757d;opacity:1
+}
+
+.search::-ms-input-placeholder{
+    color:#6c757d;opacity:1
+}
+
+.search::placeholder{
+    color:#6c757d;opacity:1
+}
+
+.search:disabled,.search[readonly]{
+    background-color:#e9ecef;opacity:1
+}select.search:not([size]):not([multiple]){
+    height:calc(2.25rem + 2px)
+}select.search:focus::-ms-value{
+    color:#495057;
+    background-color:#fff
 }
 
 /* The Modal (background) */

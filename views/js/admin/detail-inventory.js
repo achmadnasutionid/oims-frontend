@@ -15,7 +15,7 @@ $(document).ready(function(){
                 "<p>Nama :" + response.nama + "</p>" +
                 "<p>Harga:" + response.harga + "</p>" +
                 "<p>Jumlah:" + response.jumlah + "</p>" +
-                "<p>Deskripsi" + response.deskripsi + "</p>"
+                "<p>Deskripsi:" + response.deskripsi + "</p>"
             );
         },
         error: function(){

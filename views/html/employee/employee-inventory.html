@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee - Inventory</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/oims.css">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Employee - Inventaris</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/oims.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
     </head>
     
     <body>
@@ -18,12 +18,12 @@
             </div>
         </nav>
         <div class="nav nav-tabs" style="position:sticky;top:0px;width:100%;background-color:#5D5C61;">
-            <a href="employee-inventory.html"><button class="button-active" type="submit">Inventory</button></a>
-            <a href="employee-request.html"><button class="button-link" type="submit">Daftar Request</button></a>
-            <a href="login.html"><button class="button-logout" type="submit" style="position: absolute; right: 0;">Logout</button></a>
+            <a href="employee-inventory.html"><button class="button-active" type="submit">Inventaris</button></a>
+            <a href="employee-request.html"><button class="button-link" type="submit">Daftar Permintaan</button></a>
+            <a href="../login.html"><button class="button-logout" type="submit">Logout</button></a>
         </div>
     <div style="width:1000px;height:800px;margin-right:auto;margin-left:auto;padding:10px;">
-        <input type="search" placeholder=" Search" style="margin-left:800px;margin-top:10px;width:175px;height:30px;">
+        <input id="searchReq" type="search" class="search" placeholder="Cari"/>
         <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:980px;margin-right:auto;margin-left:auto;">
             <table class="table">
                 <thead>
@@ -35,22 +35,12 @@
                         <th style="width:300px;text-align:center;">Opsi</th>
                     </tr>
                 </thead>
-                <tbody style="text-align:center;">
+                <tbody id="table-content" style="text-align:center;">
                     <tr>
                         <td>1</td>
                         <td style="text-align:left;">Keyboard</td>
                         <td>100.000</td>
                         <td>2</td>
-                        <td>
-                            <a href="#"><span style="text-decoration: underline;">Detail</span></a>
-                            <input type="number" value="0" ng-model="change" min="0" style="width:50px;margin-left:50px;">
-                        </td>
-                    </tr>
-                    <tr style="height:50px;">
-                        <td>2</td>
-                        <td style="text-align:left;">Mouse</td>
-                        <td>50.000</td>
-                        <td>3</td>
                         <td>
                             <a href="#"><span style="text-decoration: underline;">Detail</span></a>
                             <input type="number" value="0" ng-model="change" min="0" style="width:50px;margin-left:50px;">

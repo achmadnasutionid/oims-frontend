@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Pegawai</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/oims.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md" style="height:100px;background-color:#7395AE;">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="oims" href="#" style="font-size:36px;">Office Inventory Management System</a>
+        </div>
+    </nav>
+    <div class="nav nav-tabs" style="position:sticky;top:0px;width:100%;background-color:#5D5C61;">
+        <a href="admin-inventory.html"><button class="button-link" type="submit">Inventaris</button></a>
+        <a href="admin-supervisor.html"><button class="button-link" type="submit">Supervisor</button></a>
+        <a href="admin-employee.html"><button class="button-active" type="submit">Pegawai</button></a>
+        <a href="admin-request.html"><button class="button-link" type="submit">Daftar Permintaan</button></a>
+        <a href="../login.html"><button class="button-logout" type="submit">Logout</button></a>
+    </div>
+    <div style="width:1000px;height:800px;margin-right:auto;margin-left:auto;padding:10px;">
+        <div style="margin-top:10px;">
+            <input id="searchReq" type="search" class="search" placeholder="Cari"/>
+            <button class="btn btn-primary" type="submit" style="margin-right:20px;background-color:#000000;height:40px;">Add</button>
+        </div>
+        <div class="form-group">
+                <input id="searchReq" type="search" class="search" placeholder="Cari"/>
+            </div>
+        <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:980px;margin-right:auto;margin-left:auto;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width:100px;"">No</th>
+                        <th style="width:400px;">Nama</th>
+                        <th style="width:150px;">Hp/Telp</th>
+                        <th style="width:150px;">Email</th>
+                        <th style="width:300px;">Opsi</th>
+                    </tr>
+                </thead>
+                <tbody id="table-content" style="text-align:center;"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
