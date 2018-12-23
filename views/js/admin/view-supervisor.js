@@ -13,8 +13,9 @@ $(document).ready(function(){
                         "<td>" + supervisor.nama + "</td>" +
                         "<td>" + supervisor.hp + "</td>" +
                         "<td>" + supervisor.email + "</td>" +
-                        "<td>" + 
-                            "<a class='btn btn-primary' href='view-supervisor.html?id="+ supervisor.id +"'>View</a>" +
+                        "<td>" +
+                            "<!--detail-supervisor-->" +
+                            "<!--edit-supervisor-->" +
                         "</td>" +
                     "<tr>"
                 );
