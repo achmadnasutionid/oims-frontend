@@ -25,30 +25,20 @@
     <div class="main-table">
         <div class="row" style="margin-top:10px;">
             <h1 style="margin-left:15px;">Daftar inventaris</h1>
-            <input id="searchReq" type="search" class="search" placeholder="Cari" style="margin-left:490px;"/>
+            <input id="searchInv" type="search" class="search" placeholder="Cari" style="margin-left:490px;"/>
         </div>
         <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th style="width:50px;text-align:center;">No</th>
-                        <th style="width:500px;text-align:center;">Nama Barang</th>
-                        <th style="width:100px;text-align:center;">Harga</th>
-                        <th style="width:100px;text-align:center;">Jumlah</th>
-                        <th style="width:300px;text-align:center;">Opsi</th>
+                        <th style="width:50px;">No</th>
+                        <th style="width:500px;">Nama Barang</th>
+                        <th style="width:100px;">Harga</th>
+                        <th style="width:100px;">Jumlah</th>
+                        <th style="width:300px;">Opsi</th>
                     </tr>
                 </thead>
-                <tbody id="table-content" style="text-align:center;">
-                    <tr>
-                        <td>1</td>
-                        <td style="text-align:left;">Keyboard</td>
-                        <td>100.000</td>
-                        <td>2</td>
-                        <td>
-                            <a href="#"><span style="text-decoration: underline;">Detail</span></a>
-                            <input type="number" value="0" ng-model="change" min="0" style="width:50px;margin-left:50px;">
-                        </td>
-                    </tr>
+                <tbody id="table-content">
                 </tbody>
             </table>
         </div>
@@ -57,6 +47,7 @@
             <button class="btn btn-primary" type="button" style="margin-left:10px;background-color:#000000;height:40px;">Atur ulang</button>
         </div>
     </div>
+
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -65,27 +56,24 @@
             <h2>Form Request</h2>
             <h6 style="margin-left:120px">Direquest oleh  : Employee (ID)</h6>
             <h6 style="margin-left:120px">Tanggal request : DD/MM/YYYY</h6>
-            <div class="table-responsive" style="margin-top:10px;background-color:#ffffff;width:800px;margin-right:auto;margin-left:auto;">
+            <div class="table-responsive" style="width:800px;">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th style="width:50px;text-align:center;">No</th>
-                            <th style="width:50px;text-align:center;">ID</th>
-                            <th style="width:500px;text-align:center;">Nama Barang</th>
-                            <th style="width:100px;text-align:center;">Harga</th>
-                            <th style="width:100px;text-align:center;">Jumlah</th>
+                            <th style="width:100px;">No</th>
+                            <th style="width:500px;">Nama Barang</th>
+                            <th style="width:100px;">Harga</th>
+                            <th style="width:100px;">Jumlah</th>
                         </tr>
                     </thead>
-                    <tbody style="text-align:center;">
+                    <tbody>
                         <tr>
-                            <td>1</td>
                             <td>1</td>
                             <td style="text-align:left;">Keyboard</td>
                             <td>100.000</td>
                             <td>1</td>
                         </tr>
                         <tr style="height:50px;">
-                            <td>2</td>
                             <td>2</td>
                             <td style="text-align:left;">Mouse</td>
                             <td>50.000</td>
