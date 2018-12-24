@@ -24,19 +24,22 @@
         <a href="admin-request.html"><button class="button-active" type="submit">Daftar Permintaan</button></a>
         <a href="../login.html"><button class="button-logout" type="submit">Logout</button></a>
     </div>
-    <div style="width:1000px;height:800px;margin-right:auto;margin-left:auto;padding:10px;">
-        <input id="searchReq" type="search" class="search" placeholder="Cari"/>
-        <div class="table-responsive" style="margin-top:10px;width:980px;margin-right:auto;margin-left:auto;">
+    <div class="main-table">
+        <div class="row" style="margin-top:10px;">
+            <h1 style="margin-left:15px;">Daftar permintaan</h1>
+            <input id="searchReq" type="search" class="search" placeholder="Cari" style="margin-left:460px;"/>
+        </div>
+        <div class="table-responsive">
             <table class="table">
                 <thead>
                     <tr>
-                        <th style="width:100px;text-align:center;">No</th>
-                        <th style="width:500px;text-align:center;">Deskripsi</th>
-                        <th style="width:100px;text-align:center;">Status</th>
-                        <th style="width:300px;text-align:center;">Opsi</th>
+                        <th style="width:100px;">No</th>
+                        <th style="width:500px;">Deskripsi</th>
+                        <th style="width:100px;">Status</th>
+                        <th style="width:300px;">Opsi</th>
                     </tr>
                 </thead>
-                <tbody id="table-content" style="text-align:center;">
+                <tbody id="table-content">
                     <tr>
                         <td>1</td>
                         <td style="text-align:left;">Mouse 1, Keyboard 1</td>
