@@ -48,8 +48,17 @@ table{
     width: 100px;
     position: absolute; right: 0;
 }
-.search{display:block;margin-left:780px;
-    margin-top:10px;
+
+.main-table{
+    width:1000px;
+    height:800px;
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px;
+}
+
+.search{display:block;
+    margin-top:5px;
     width:200px;
     height:40px;
     padding:.375rem .75rem;
@@ -103,6 +112,14 @@ table{
 }select.search:focus::-ms-value{
     color:#495057;
     background-color:#fff
+}
+
+.table-responsive{
+    margin-top:10px;
+    background-color:#ffffff;
+    width:980px;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 /* The Modal (background) */
